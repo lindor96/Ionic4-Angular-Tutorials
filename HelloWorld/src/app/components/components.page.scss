@@ -1,0 +1,35 @@
+ion-content {
+  --background: url("../../assets/icon/images/galaxy-tabpro-s-background-Is-4K-Wallpaper.jpg");
+  background-blend-mode: overlay;
+  background-repeat: round;
+  background-size: cover;
+}
+ion-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 24px 0 rgba(0, 0, 0, 0.24);
+  background-color: #f0ffff;
+  border-radius: 25px;
+  border: 2px solid;
+}
+
+ion-card-title {
+  text-align: center;
+}
+
+ion-card-subtitle {
+  text-align: center;
+}
+
+.Card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.2em;
+}
+
+.container {
+  margin: 5%;
+}
+
+img {
+  max-width: 100%;
+  align-content: center;
+}

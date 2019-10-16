@@ -1,0 +1,185 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Framework
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon slot="icon-only" name="logo-ionic"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Ionic Framework</ion-title>
+
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon slot="icon-only" name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen class="ion-padding">
+
+  <!-- Ionic Components -->
+  <ion-card (click)="Ionic_Components()">
+
+    <img src="../../assets/icon/feature-guide-components-icon.png" />
+
+    <ion-card-content>
+      <ion-card-title>Components</ion-card-title>
+      <ion-card-subtitle>
+        A comprehensive look at Ionic Framework's beautifully designed UI component library.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- Introduction -->
+  <ion-card (click)="Introduction()">
+    <div class="container">
+      <img src="../../assets/icon/guide-introduction-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>Introduction</ion-card-title>
+      <ion-card-subtitle>
+        Learn the fundamentals you need to know to start building amazing apps with Ionic Framework.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Installation -->
+  <ion-card (click)="Installation()">
+    <div class="container">
+      <img src="../../assets/icon/guide-installation-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>Installation</ion-card-title>
+      <ion-card-subtitle>A step-by-step guide to installing and setting up your system to build Ionic Framework apps.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- CLI -->
+  <ion-card (click)="CLI()">
+    <div class="container">
+      <img src="../../assets/icon/guide-cli-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>CLI</ion-card-title>
+      <ion-card-subtitle>The Ionic command-line interface is your go-to tool for for developing Ionic apps.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Native APIs -->
+  <ion-card (click)="Native_APIs()">
+    <div class="container">
+      <img src="../../assets/icon/guide-nativeapis-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>Native APIs</ion-card-title>
+      <ion-card-subtitle>Integrate and leverage device plugins like Bluetooth, Maps, HealthKit, and more.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Resources -->
+  <ion-card (click)="Resources()">
+      <div class="container">
+        <img src="../../assets/icon/guide-resources-icon.png" class="Card-icon" />
+      </div>
+  
+      <ion-card-content>
+        <ion-card-title>Resources</ion-card-title>
+        <ion-card-subtitle>Learn Ionic with official guides, videos, books, courses, and more.
+        </ion-card-subtitle>
+      </ion-card-content>
+    </ion-card>
+
+  <!-- FAQ -->
+  <ion-card (click)="FAQ()">
+    <div class="container">
+      <img src="../../assets/icon/guide-faq-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>FAQ</ion-card-title>
+      <ion-card-subtitle>Get answers to some of the most commonly asked questions about the framework.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- fab placed to the bottom start -->
+  <ion-fab horizontal="end" slot="fixed" vertical="bottom" edge="false">
+    <ion-fab-button color="dark">
+      <ion-ripple-effect></ion-ripple-effect>
+      <ion-icon name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button color="light">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon name="person"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon name="settings"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon name="information-circle-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon slot="icon-only" name="finger-print"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Footer</ion-title>
+
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
