@@ -41,6 +41,10 @@ export class ComponentsPage implements OnInit {
   Content(){
     this.router.navigate(['content']);
   }
+
+  DateTime(){
+    this.router.navigate(['date-time']);
+  }
   ngOnInit() {
   }
 

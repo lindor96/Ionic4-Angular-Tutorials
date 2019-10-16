@@ -20,6 +20,7 @@ const routes: Routes = [
   { path: 'checkbox', loadChildren: './IonicComponents/checkbox/checkbox.module#CheckboxPageModule' },
   { path: 'chip', loadChildren: './IonicComponents/chip/chip.module#ChipPageModule' },
   { path: 'content', loadChildren: './IonicComponents/content/content.module#ContentPageModule' },
+  { path: 'date-time', loadChildren: './IonicComponents/date-time/date-time.module#DateTimePageModule' },
 ];
 
 @NgModule({
