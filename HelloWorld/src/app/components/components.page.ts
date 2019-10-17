@@ -30,20 +30,48 @@ export class ComponentsPage implements OnInit {
     this.router.navigate(['card']);
   }
 
-  Checkbox(){
+  Checkbox() {
     this.router.navigate(['checkbox']);
   }
 
-  Chip(){
+  Chip() {
     this.router.navigate(['chip']);
   }
 
-  Content(){
+  Content() {
     this.router.navigate(['content']);
   }
 
-  DateTime(){
+  DateTime() {
     this.router.navigate(['date-time']);
+  }
+
+  FloatingActionButton() {
+    this.router.navigate(['floating-action-button']);
+  }
+
+  Grid() {
+    this.router.navigate(['grid']);
+  }
+
+  Infinite_Scroll() {
+    this.router.navigate(['infinite-scroll']);
+  }
+
+  Input() {
+    this.router.navigate(['input']);
+  }
+
+  Item() {
+    this.router.navigate(['item']);
+  }
+
+  List() {
+    this.router.navigate(['list']);
+  }
+
+  Menu() {
+    this.router.navigate(['menu']);
   }
   ngOnInit() {
   }

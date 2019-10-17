@@ -1,8 +1,9 @@
 <ion-header translucent>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-      <ion-ripple-effect></ion-ripple-effect>
+      <ion-button routerLink="/home">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>Components</ion-title>
   </ion-toolbar>
@@ -131,7 +132,7 @@
   </ion-card>
 
   <!-- Floating Action Button -->
-  <ion-card>
+  <ion-card (click)="FloatingActionButton()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-fab-icon.png" class="Card-icon" />
     </div>
@@ -144,7 +145,7 @@
   </ion-card>
 
   <!-- Icons -->
-  <ion-card>
+  <ion-card href="https://ionicons.com/" target="_self">
 
     <img src="../../assets/icon/conponents_icons/feature-component-icons-icon.png" />
 
@@ -156,7 +157,7 @@
   </ion-card>
 
   <!-- Grid -->
-  <ion-card>
+  <ion-card (click)="Grid()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-grid-icon.png" class="Card-icon" />
     </div>
@@ -169,7 +170,7 @@
   </ion-card>
 
   <!-- Infinite Scroll -->
-  <ion-card>
+  <ion-card (click)="Infinite_Scroll()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-infinitescroll-icon.png" class="Card-icon" />
     </div>
@@ -182,7 +183,7 @@
   </ion-card>
 
   <!-- Input -->
-  <ion-card>
+  <ion-card (click)="Input()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-input-icon.png" class="Card-icon" />
     </div>
@@ -195,7 +196,7 @@
   </ion-card>
 
   <!-- Item -->
-  <ion-card>
+  <ion-card (click)="Item()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-item-icon.png" class="Card-icon" />
     </div>
@@ -208,7 +209,7 @@
   </ion-card>
 
   <!-- List -->
-  <ion-card>
+  <ion-card (click)="List()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-lists-icon.png" class="Card-icon" />
     </div>
@@ -233,7 +234,7 @@
   </ion-card>
 
   <!-- Menu -->
-  <ion-card>
+  <ion-card (click)="Menu()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-menu-icon.png" class="Card-icon" />
     </div>

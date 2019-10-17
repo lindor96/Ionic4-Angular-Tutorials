@@ -1,17 +1,8 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Framework
-    </ion-title>
-  </ion-toolbar>
-</ion-header> -->
 <ion-header translucent>
   <ion-toolbar>
     <ion-buttons slot="secondary">
-      <ion-button>
-        <ion-ripple-effect></ion-ripple-effect>
-        <ion-icon slot="icon-only" name="logo-ionic"></ion-icon>
-      </ion-button>
+      <ion-menu-button></ion-menu-button>
+      <ion-ripple-effect></ion-ripple-effect>
     </ion-buttons>
 
     <ion-title>Ionic Framework</ion-title>
@@ -95,18 +86,31 @@
     </ion-card-content>
   </ion-card>
 
+  <!-- Theming -->
+  <ion-card (click)="Theming()">
+    <div class="container">
+      <img src="../../assets/icon/guide-theming-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>Theming</ion-card-title>
+      <ion-card-subtitle>A comprehensive look at Ionic Framework's beautifully designed UI component library.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
   <!-- Resources -->
   <ion-card (click)="Resources()">
-      <div class="container">
-        <img src="../../assets/icon/guide-resources-icon.png" class="Card-icon" />
-      </div>
-  
-      <ion-card-content>
-        <ion-card-title>Resources</ion-card-title>
-        <ion-card-subtitle>Learn Ionic with official guides, videos, books, courses, and more.
-        </ion-card-subtitle>
-      </ion-card-content>
-    </ion-card>
+    <div class="container">
+      <img src="../../assets/icon/guide-resources-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>Resources</ion-card-title>
+      <ion-card-subtitle>Learn Ionic with official guides, videos, books, courses, and more.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
 
   <!-- FAQ -->
   <ion-card (click)="FAQ()">
