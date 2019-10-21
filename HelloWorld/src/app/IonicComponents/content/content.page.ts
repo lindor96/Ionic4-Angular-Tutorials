@@ -10,21 +10,17 @@ export class ContentPage implements OnInit {
 
   @ViewChild(IonContent, {read: IonContent, static: false}) content: IonContent; 
 
-  constructor(){}
-
-  onPageScroll(event) {
-    console.log(event.target.scrollTop);
-}
-
-  scrollToBottom(event){
+  
+  scrollToBottom(){
     this.content.scrollToBottom();
-    console.log(event.target.scrollToBottom);
+    console.log('clicked');
   }
 
-  logScrollEnd(event){
+  logScrollEnd(){
     this.content.ionScrollEnd;
-    console.log(event.target.ionScrollEnd);
-
+  }
+  constructor(){
+    this.content.scrollToBottom();
   }
   ngOnInit() {
   }

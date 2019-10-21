@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ModalController } from '@ionic/angular';
+import { ModalController, AlertController } from '@ionic/angular';
 import { ModalPage } from '../../app/IonicComponents/modal/modal.page'
 
 
@@ -11,7 +11,7 @@ import { ModalPage } from '../../app/IonicComponents/modal/modal.page'
 })
 export class ComponentsPage implements OnInit {
 
-  constructor(private router: Router, public modalController: ModalController) { }
+  constructor(private router: Router, public modalController: ModalController, private alertController: AlertController) { }
 
   Action_Sheet() {
     this.router.navigate(['action-sheet']);
@@ -71,6 +71,17 @@ export class ComponentsPage implements OnInit {
 
   List() {
     this.router.navigate(['list']);
+  }
+
+  async Menu() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      subHeader: 'Menu',
+      message: 'Demonstrated in the home page',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
   Modal() {
