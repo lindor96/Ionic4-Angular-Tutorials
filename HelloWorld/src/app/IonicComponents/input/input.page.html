@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen class="ion-padding">
+<ion-content fullscreen class="ion-padding" scroll-y="false">
   <form>
     <ion-list lines="full" class="ion-no-margin ion-no-padding">
       <ion-item>
@@ -39,8 +39,10 @@
       </ion-item>
     </ion-list>
 
-    <div class="ion-padding">
-      <ion-button expand="block" type="submit" class="ion-no-margin">Create account</ion-button>
-    </div>
+    <section class="ion-padding">
+      <ion-button expand="block" color="light" type="submit" class="ion-no-margin">Create account</ion-button>
+      <ion-ripple-effect></ion-ripple-effect>
+    </section>
+
   </form>
 </ion-content>

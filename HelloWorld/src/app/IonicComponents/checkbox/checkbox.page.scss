@@ -1,7 +1,12 @@
-ion-content {
-  --background: #e6f3ff;
-}
+// ion-content {
+//   --background: #e6f3ff;
+// }
 
+ion-content {
+  --background: url("../../../assets/icon/images/galaxy-tabpro-s-background-Is-4K-Wallpaper.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+}
 ion-list {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 24px 0 rgba(0, 0, 0, 0.24);
   border-radius: 25px;
