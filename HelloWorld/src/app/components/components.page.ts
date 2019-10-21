@@ -91,6 +91,10 @@ export class ComponentsPage implements OnInit {
     this.router.navigate(['popover']);
   }
 
+  Progress_Indicators(){
+    this.router.navigate(['progress-indicators']);
+  }
+
   Tabs() {
     this.router.navigate(['tabs']);
   }

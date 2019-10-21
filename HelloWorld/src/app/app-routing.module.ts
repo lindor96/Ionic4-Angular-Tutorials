@@ -34,6 +34,7 @@ const routes: Routes = [
   { path: 'slides', loadChildren: './IonicComponents/slides/slides.module#SlidesPageModule' },
   { path: 'select', loadChildren: './IonicComponents/select/select.module#SelectPageModule' },
   { path: 'toolbar', loadChildren: './IonicComponents/toolbar/toolbar.module#ToolbarPageModule' },
+  { path: 'progress-indicators', loadChildren: './IonicComponents/progress-indicators/progress-indicators.module#ProgressIndicatorsPageModule' },
 ];
 
 @NgModule({
