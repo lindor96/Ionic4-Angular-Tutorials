@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalController, AlertController } from '@ionic/angular';
+import { ModalPage } from '../../app/IonicComponents/modal/modal.page'
+
 
 @Component({
   selector: 'app-components',
@@ -8,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class ComponentsPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public modalController: ModalController, private alertController: AlertController) { }
 
   Action_Sheet() {
     this.router.navigate(['action-sheet']);
@@ -70,8 +73,42 @@ export class ComponentsPage implements OnInit {
     this.router.navigate(['list']);
   }
 
-  Menu() {
-    this.router.navigate(['menu']);
+  async Menu() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      subHeader: 'Menu',
+      message: 'Demonstrated in the home page',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
+  Modal() {
+    this.router.navigate(['modal']);
+  }
+  Popover() {
+    this.router.navigate(['popover']);
+  }
+
+  Tabs() {
+    this.router.navigate(['tabs']);
+  }
+
+  Toast() {
+    this.router.navigate(['toast']);
+  }
+
+  Toolbar(){
+    this.router.navigate(['toolbar'])
+  }
+
+  Slides() {
+    this.router.navigate(['slides']);
+  }
+
+  Select() {
+    this.router.navigate(['select']);
   }
   ngOnInit() {
   }

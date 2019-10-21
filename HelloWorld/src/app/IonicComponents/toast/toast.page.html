@@ -5,13 +5,15 @@
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Action Sheet</ion-title>
+    <ion-title>Toast</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen class="ion-padding" scroll-y="false">
   <section class="ion-padding">
-    <ion-button expand="block" color="light" (click)="presentActionSheet()">Show Action Sheet</ion-button>
+    <ion-button expand="block" color="light" (click)="presentToast()">Pair <ion-icon slot="end" name="bluetooth">
+      </ion-icon>
+    </ion-button>
     <ion-ripple-effect></ion-ripple-effect>
   </section>
 </ion-content>

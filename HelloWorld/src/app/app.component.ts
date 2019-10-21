@@ -38,7 +38,7 @@ export class AppComponent {
 
   pages = [
     {
-      title: 'home',
+      title: 'Home',
       url: ''
     },
     {

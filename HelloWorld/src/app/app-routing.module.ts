@@ -27,6 +27,13 @@ const routes: Routes = [
   { path: 'input', loadChildren: './IonicComponents/input/input.module#InputPageModule' },
   { path: 'item', loadChildren: './IonicComponents/item/item.module#ItemPageModule' },
   { path: 'list', loadChildren: './IonicComponents/list/list.module#ListPageModule' },
+  { path: 'modal', loadChildren: './IonicComponents/modal/modal.module#ModalPageModule' },
+  { path: 'popover', loadChildren: './IonicComponents/popover/popover.module#PopoverPageModule' },
+  { path: 'tabs', loadChildren: './IonicComponents/tabs/tabs.module#TabsPageModule' },
+  { path: 'toast', loadChildren: './IonicComponents/toast/toast.module#ToastPageModule' },
+  { path: 'slides', loadChildren: './IonicComponents/slides/slides.module#SlidesPageModule' },
+  { path: 'select', loadChildren: './IonicComponents/select/select.module#SelectPageModule' },
+  { path: 'toolbar', loadChildren: './IonicComponents/toolbar/toolbar.module#ToolbarPageModule' },
 ];
 
 @NgModule({

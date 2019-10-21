@@ -8,12 +8,19 @@ import { IonContent } from '@Ionic/angular';
 })
 export class ContentPage implements OnInit {
 
-  @ViewChild(IonContent, {static: false, read: Component}) content: any; 
+  @ViewChild(IonContent, {read: IonContent, static: false}) content: IonContent; 
 
-  constructor(){}
+  
+  scrollToBottom(){
+    this.content.scrollToBottom();
+    console.log('clicked');
+  }
 
-  async scrollToTop(){
-    await this.content.scrollToTop();
+  logScrollEnd(){
+    this.content.ionScrollEnd;
+  }
+  constructor(){
+    this.content.scrollToBottom();
   }
   ngOnInit() {
   }
