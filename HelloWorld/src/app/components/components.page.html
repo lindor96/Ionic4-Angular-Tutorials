@@ -105,7 +105,7 @@
   </ion-card>
 
   <!-- Content -->
-  <ion-card (click)="Content()">
+  <ion-card>
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-content-icon.png" class="Card-icon" />
     </div>
@@ -145,7 +145,7 @@
   </ion-card>
 
   <!-- Icons -->
-  <ion-card href="https://ionicons.com/" target="_self">
+  <ion-card>
 
     <img src="../../assets/icon/conponents_icons/feature-component-icons-icon.png" />
 
@@ -233,21 +233,22 @@
     </ion-card-content>
   </ion-card>
 
-   <!-- Modal -->
-   <ion-card (click)="Menu() ">
-      <div class="container">
-        <img src="../../assets/icon/conponents_icons/component-menu-icon.png" class="Card-icon" />
-      </div>
-  
-      <ion-card-content>
-        <ion-card-title>Menu</ion-card-title>
-        <ion-card-subtitle>Menus are a common navigation pattern. They can be permanently on-screen, or revealed when needed.
-        </ion-card-subtitle>
-      </ion-card-content>
-    </ion-card>
+  <!-- Menu -->
+  <ion-card (click)="Menu() ">
+    <div class="container">
+      <img src="../../assets/icon/conponents_icons/component-menu-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>Menu</ion-card-title>
+      <ion-card-subtitle>Menus are a common navigation pattern. They can be permanently on-screen, or revealed when
+        needed.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
 
   <!-- Modal -->
-  <ion-card (click)="presentModal() ">
+  <ion-card>
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-modal-icon.png" class="Card-icon" />
     </div>
@@ -404,7 +405,7 @@
   </ion-card>
 
   <!-- Toolbar -->
-  <ion-card>
+  <ion-card (click)="Toolbar()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-toolbar-icon.png" class="Card-icon" />
     </div>

@@ -33,6 +33,7 @@ const routes: Routes = [
   { path: 'toast', loadChildren: './IonicComponents/toast/toast.module#ToastPageModule' },
   { path: 'slides', loadChildren: './IonicComponents/slides/slides.module#SlidesPageModule' },
   { path: 'select', loadChildren: './IonicComponents/select/select.module#SelectPageModule' },
+  { path: 'toolbar', loadChildren: './IonicComponents/toolbar/toolbar.module#ToolbarPageModule' },
 ];
 
 @NgModule({
