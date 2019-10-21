@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, IonContent } from '@ionic/angular';
 
 import { ContentPage } from './content.page';
 
@@ -23,4 +23,19 @@ const routes: Routes = [
   ],
   declarations: [ContentPage]
 })
-export class ContentPageModule {}
+export class ContentPageModule {
+  @ViewChild(IonContent, { static: true }) content: IonContent;
+
+scrollToBottom(){
+  setTimeout(() => {
+      if (this.content.scrollToBottom) {
+        setTimeout(()=>{this.content.scrollToBottom(400);},200);
+         // this.content.scrollToBottom(400);
+      }
+  }, 500);
+}
+
+scrollToTop(){
+  setTimeout(()=>{this.content.scrollToTop(400);},200);
+}
+}
