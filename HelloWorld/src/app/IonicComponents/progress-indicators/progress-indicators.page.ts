@@ -15,7 +15,7 @@ export class ProgressIndicatorsPage implements OnInit {
       animated: true,
       spinner: "lines-small",
       duration: 2000,
-      message: 'Please wait...',
+      message: 'Please wait..',
       translucent: true,
       cssClass: 'custom-class custom-loading'
     });
