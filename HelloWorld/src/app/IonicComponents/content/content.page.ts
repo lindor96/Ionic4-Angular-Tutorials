@@ -20,7 +20,6 @@ export class ContentPage implements OnInit {
     this.content.ionScrollEnd;
   }
   constructor(){
-    this.content.scrollToBottom();
   }
   ngOnInit() {
   }
