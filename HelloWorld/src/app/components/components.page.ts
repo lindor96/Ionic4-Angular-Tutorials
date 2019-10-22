@@ -114,6 +114,10 @@ export class ComponentsPage implements OnInit {
   Select() {
     this.router.navigate(['select']);
   }
+
+  Refresher(){
+    this.router.navigate(['refresher']);
+  }
   ngOnInit() {
   }
 
