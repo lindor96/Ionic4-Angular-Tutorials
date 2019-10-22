@@ -313,18 +313,6 @@
     </ion-card-content>
   </ion-card>
 
-  <!-- Searchbar -->
-  <ion-card>
-
-    <img src="../../assets/icon/conponents_icons/feature-component-search-icon.png" />
-
-    <ion-card-content>
-      <ion-card-title>Searchbar</ion-card-title>
-      <ion-card-subtitle>Searchbar is used to search or filter items, usually from a toolbar.
-      </ion-card-subtitle>
-    </ion-card-content>
-  </ion-card>
-
   <!-- Reorder -->
   <ion-card>
     <div class="container">
@@ -350,6 +338,18 @@
       </ion-card-subtitle>
     </ion-card-content>
   </ion-card>
+
+  <!-- Searchbar -->
+  <ion-card (click)="Searchbar()">
+
+      <img src="../../assets/icon/conponents_icons/feature-component-search-icon.png" />
+  
+      <ion-card-content>
+        <ion-card-title>Searchbar</ion-card-title>
+        <ion-card-subtitle>Searchbar is used to search or filter items, usually from a toolbar.
+        </ion-card-subtitle>
+      </ion-card-content>
+    </ion-card>
 
   <!-- Segment -->
   <ion-card (click)="Segment()">

@@ -95,6 +95,10 @@ export class ComponentsPage implements OnInit {
     this.router.navigate(['progress-indicators']);
   }
 
+  Searchbar(){
+    this.router.navigate(['searchbar']);
+  }
+
   Segment(){
     this.router.navigate(['segment']);
   }
