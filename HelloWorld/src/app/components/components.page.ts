@@ -103,6 +103,10 @@ export class ComponentsPage implements OnInit {
     this.router.navigate(['toast']);
   }
 
+  Toggle(){
+    this.router.navigate(['toggle']);
+  }
+
   Toolbar(){
     this.router.navigate(['toolbar'])
   }
