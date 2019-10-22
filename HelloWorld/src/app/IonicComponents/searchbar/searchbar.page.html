@@ -1,0 +1,56 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/components">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Searchbar</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen class="ion-padding">
+  <!-- Default Searchbar -->
+  <ion-searchbar autocomplete="on" autocorrect="on" color="light" spellcheck="true"></ion-searchbar>
+
+  <!-- Searchbar with cancel button always shown -->
+  <ion-searchbar showCancelButton="always" autocomplete="on" autocorrect="on" color="light" spellcheck="true">
+  </ion-searchbar>
+
+  <!-- Searchbar with cancel button never shown -->
+  <ion-searchbar showCancelButton="never" autocomplete="on" autocorrect="on" color="light" spellcheck="true"
+    placeholder="password"></ion-searchbar>
+
+  <!-- Searchbar with cancel button shown on focus -->
+  <ion-searchbar showCancelButton="focus" autocomplete="on" autocorrect="on" color="light" spellcheck="true">
+  </ion-searchbar>
+
+  <!-- Searchbar with danger color -->
+  <ion-searchbar color="danger" autocomplete="on" autocorrect="on" color="light" spellcheck="true"></ion-searchbar>
+
+  <!-- Searchbar with value -->
+  <ion-searchbar value="Ionic" autocomplete="on" autocorrect="on" color="light" spellcheck="true"></ion-searchbar>
+
+  <!-- Searchbar with telephone type -->
+  <ion-searchbar type="tel" autocomplete="on" autocorrect="on" color="light" spellcheck="true"></ion-searchbar>
+
+  <!-- Searchbar with numeric inputmode -->
+  <ion-searchbar inputmode="numeric" autocomplete="on" autocorrect="on" color="light" spellcheck="true"></ion-searchbar>
+
+  <!-- Searchbar disabled -->
+  <ion-searchbar disabled="true" autocomplete="on" autocorrect="on" color="light" spellcheck="true"></ion-searchbar>
+
+  <!-- Searchbar with a cancel button and custom cancel button text -->
+  <ion-searchbar showCancelButton="focus" autocomplete="on" cancelButtonText="Custom Cancel" autocorrect="on"
+    color="light" spellcheck="true">
+  </ion-searchbar>
+
+  <!-- Searchbar with a custom debounce -->
+  <ion-searchbar debounce="500" autocomplete="on" autocorrect="on" color="light" spellcheck="true"></ion-searchbar>
+
+  <!-- Animated Searchbar -->
+  <ion-searchbar animated="true" autocomplete="on" autocorrect="on" color="light" spellcheck="true"></ion-searchbar>
+
+  <!-- Searchbar with a placeholder -->
+  <ion-searchbar placeholder="Filter Schedules" autocomplete="on" autocorrect="on" color="light" spellcheck="true">
+  </ion-searchbar>
+</ion-content>

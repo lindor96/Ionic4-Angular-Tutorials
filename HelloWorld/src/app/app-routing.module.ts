@@ -34,8 +34,13 @@ const routes: Routes = [
   { path: 'slides', loadChildren: './IonicComponents/slides/slides.module#SlidesPageModule' },
   { path: 'select', loadChildren: './IonicComponents/select/select.module#SelectPageModule' },
   { path: 'toolbar', loadChildren: './IonicComponents/toolbar/toolbar.module#ToolbarPageModule' },
-  { path: 'progress-indicators', loadChildren: './IonicComponents/progress-indicators/progress-indicators.module#ProgressIndicatorsPageModule' },  { path: 'refresher', loadChildren: './IonicComponents/refresher/refresher.module#RefresherPageModule' },
-
+  { path: 'progress-indicators', loadChildren: './IonicComponents/progress-indicators/progress-indicators.module#ProgressIndicatorsPageModule' },
+  { path: 'refresher', loadChildren: './IonicComponents/refresher/refresher.module#RefresherPageModule' },
+  { path: 'toggle', loadChildren: './IonicComponents/toggle/toggle.module#TogglePageModule' },
+  { path: 'segment', loadChildren: './IonicComponents/segment/segment.module#SegmentPageModule' },
+  { path: 'searchbar', loadChildren: './IonicComponents/searchbar/searchbar.module#SearchbarPageModule' },
+  { path: 'reorder', loadChildren: './IonicComponents/reorder/reorder.module#ReorderPageModule' },
+  { path: 'radio', loadChildren: './IonicComponents/radio/radio.module#RadioPageModule' },
 ];
 
 @NgModule({

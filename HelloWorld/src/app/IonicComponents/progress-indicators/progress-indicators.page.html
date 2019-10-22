@@ -1,9 +1,17 @@
-<ion-header>
+<ion-header translucent>
   <ion-toolbar>
-    <ion-title>ProgressIndicators</ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/components">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Loading</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content fullscreen class="ion-padding" scroll-y="false">
+  <section class="ion-padding">
+    <ion-button expand="block" color="light" (click)="presentLoadingWithOptions()">Show Loader</ion-button>
+    <ion-ripple-effect></ion-ripple-effect>
+  </section>
 </ion-content>

@@ -288,7 +288,7 @@
   </ion-card>
 
   <!-- Radio -->
-  <ion-card>
+  <ion-card (click)="Radio()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-radio-icon.png" class="Card-icon" />
     </div>
@@ -313,20 +313,8 @@
     </ion-card-content>
   </ion-card>
 
-  <!-- Searchbar -->
-  <ion-card>
-
-    <img src="../../assets/icon/conponents_icons/feature-component-search-icon.png" />
-
-    <ion-card-content>
-      <ion-card-title>Searchbar</ion-card-title>
-      <ion-card-subtitle>Searchbar is used to search or filter items, usually from a toolbar.
-      </ion-card-subtitle>
-    </ion-card-content>
-  </ion-card>
-
   <!-- Reorder -->
-  <ion-card>
+  <ion-card (click)="Reorder()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-reorder-icon.png" class="Card-icon" />
     </div>
@@ -351,8 +339,20 @@
     </ion-card-content>
   </ion-card>
 
+  <!-- Searchbar -->
+  <ion-card (click)="Searchbar()">
+
+      <img src="../../assets/icon/conponents_icons/feature-component-search-icon.png" />
+  
+      <ion-card-content>
+        <ion-card-title>Searchbar</ion-card-title>
+        <ion-card-subtitle>Searchbar is used to search or filter items, usually from a toolbar.
+        </ion-card-subtitle>
+      </ion-card-content>
+    </ion-card>
+
   <!-- Segment -->
-  <ion-card>
+  <ion-card (click)="Segment()">
     <div class="container">
       <img src="../../assets/icon/conponents_icons/component-segment-icon.png" class="Card-icon" />
     </div>
@@ -400,6 +400,19 @@
       <ion-card-title>Toast</ion-card-title>
       <ion-card-subtitle>Toast is used to show a notification over the top of an app's content. It can be temporary or
         dismissable.
+      </ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Content -->
+  <ion-card  (click)="Toggle()">
+    <div class="container">
+      <img src="../../assets/icon/conponents_icons/component-toggle-icon.png" class="Card-icon" />
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>Toggle</ion-card-title>
+      <ion-card-subtitle>Toggles are an input for binary options, often used for options and switches.
       </ion-card-subtitle>
     </ion-card-content>
   </ion-card>
