@@ -36,6 +36,7 @@ const routes: Routes = [
   { path: 'toolbar', loadChildren: './IonicComponents/toolbar/toolbar.module#ToolbarPageModule' },
   { path: 'progress-indicators', loadChildren: './IonicComponents/progress-indicators/progress-indicators.module#ProgressIndicatorsPageModule' },
   { path: 'toggle', loadChildren: './IonicComponents/toggle/toggle.module#TogglePageModule' },
+  { path: 'segment', loadChildren: './IonicComponents/segment/segment.module#SegmentPageModule' },
 ];
 
 @NgModule({
