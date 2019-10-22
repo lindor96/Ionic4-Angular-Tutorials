@@ -1,9 +1,32 @@
-<ion-header>
+<ion-header translucent>
   <ion-toolbar>
-    <ion-title>refresher</ion-title>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/components">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Refresher</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- Custom Refresher Content -->
 <ion-content>
-
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="./avatar-ben.png">
+    </ion-avatar>
+    <ion-label>
+      <h2>Ben</h2>
+      <h3>Move Along</h3>
+      <p>These aren't the droids you're looking for...</p>
+    </ion-label>
+  </ion-item>
 </ion-content>
