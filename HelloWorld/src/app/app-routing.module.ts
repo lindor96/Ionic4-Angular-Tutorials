@@ -39,6 +39,7 @@ const routes: Routes = [
   { path: 'segment', loadChildren: './IonicComponents/segment/segment.module#SegmentPageModule' },
   { path: 'searchbar', loadChildren: './IonicComponents/searchbar/searchbar.module#SearchbarPageModule' },
   { path: 'reorder', loadChildren: './IonicComponents/reorder/reorder.module#ReorderPageModule' },
+  { path: 'radio', loadChildren: './IonicComponents/radio/radio.module#RadioPageModule' },
 ];
 
 @NgModule({

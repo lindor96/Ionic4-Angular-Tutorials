@@ -91,19 +91,22 @@ export class ComponentsPage implements OnInit {
     this.router.navigate(['popover']);
   }
 
-  Progress_Indicators(){
+  Progress_Indicators() {
     this.router.navigate(['progress-indicators']);
   }
 
-  Reorder(){
+  Radio() {
+    this.router.navigate(['radio']);
+  }
+  Reorder() {
     this.router.navigate(['reorder']);
   }
 
-  Searchbar(){
+  Searchbar() {
     this.router.navigate(['searchbar']);
   }
 
-  Segment(){
+  Segment() {
     this.router.navigate(['segment']);
   }
 
@@ -115,11 +118,11 @@ export class ComponentsPage implements OnInit {
     this.router.navigate(['toast']);
   }
 
-  Toggle(){
+  Toggle() {
     this.router.navigate(['toggle']);
   }
 
-  Toolbar(){
+  Toolbar() {
     this.router.navigate(['toolbar'])
   }
 
