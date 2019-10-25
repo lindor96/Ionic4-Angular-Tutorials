@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { PopoverController } from '@ionic/angular';
 import { PopoverPage } from 'src/app/IonicComponents/popover/popover.page';
+import { ModalController } from '@ionic/angular';
+import { ModalPage } from '../IonicComponents/modal/modal.page';
+
 
 @Component({
   selector: 'app-home',
@@ -10,7 +13,7 @@ import { PopoverPage } from 'src/app/IonicComponents/popover/popover.page';
 })
 export class HomePage {
 
-  constructor(private router: Router, private popoverController: PopoverController) { }
+  constructor(private router: Router, private popoverController: PopoverController, public modalController: ModalController) { }
 
   Ionic_Components() {
     this.router.navigate(['components']);
@@ -56,6 +59,13 @@ export class HomePage {
     return await popover.present();
   }
 
-
-
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: ModalPage,
+      animated: true,
+      backdropDismiss: true,
+      showBackdrop: true
+    });
+    return await modal.present();
+  }
 }

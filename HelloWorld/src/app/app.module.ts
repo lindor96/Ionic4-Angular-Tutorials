@@ -10,11 +10,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PopoverPage } from './IonicComponents/popover/popover.page';
 import { PopoverPageModule } from './IonicComponents/popover/popover.module';
+import { ModalPageModule } from './IonicComponents/modal/modal.module';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,PopoverPageModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
+  PopoverPageModule,
+  ModalPageModule],
   providers: [
     StatusBar,
     SplashScreen,

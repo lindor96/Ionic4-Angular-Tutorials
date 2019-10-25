@@ -83,8 +83,15 @@ export class ComponentsPage implements OnInit {
     await alert.present();
   }
 
-  Modal() {
-    this.router.navigate(['modal']);
+  async Modal() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      subHeader: 'Modal',
+      message: 'Demonstrated on home page',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
   async Navigation() {
