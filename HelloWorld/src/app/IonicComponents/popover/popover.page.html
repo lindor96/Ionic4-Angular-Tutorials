@@ -1,17 +1,8 @@
-<ion-header translucent>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button routerLink="/components">
-        <ion-icon name="arrow-back"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>Popover</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content fullscreen class="ion-padding" scroll-y="false">
-  <section class="ion-padding">
-    <ion-button expand="block" color="light" (click)="presentPopover()">Show</ion-button>
-    <ion-ripple-effect></ion-ripple-effect>
-  </section>
-</ion-content>
+<ion-list>
+  <ion-list-header>Ionic</ion-list-header>
+  <ion-item button>Learn Ionic</ion-item>
+  <ion-item button>Documentation</ion-item>
+  <ion-item button>Showcase</ion-item>
+  <ion-item button>GitHub Repo</ion-item>
+</ion-list>
+<ion-button expand="block" fill="outline" (click)="dismissPopover()">Close</ion-button>
