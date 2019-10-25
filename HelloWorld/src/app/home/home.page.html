@@ -1,8 +1,8 @@
 <ion-header translucent>
   <ion-toolbar>
     <ion-buttons slot="secondary">
-      <ion-menu-button></ion-menu-button>
-      <ion-ripple-effect></ion-ripple-effect>
+      <ion-menu-button>
+      </ion-menu-button>
     </ion-buttons>
 
     <ion-title>Ionic Framework</ion-title>
@@ -168,10 +168,11 @@
 
 </ion-content>
 
-<ion-footer>
+<ion-footer translucent="true">
   <ion-toolbar>
     <ion-button (click)="presentModal()" shape="round" strong="true" expand="block" fill="outline" size="small">
       Ionic CLI
+      <ion-ripple-effect></ion-ripple-effect>
     </ion-button>
     <ion-ripple-effect></ion-ripple-effect>
   </ion-toolbar>
