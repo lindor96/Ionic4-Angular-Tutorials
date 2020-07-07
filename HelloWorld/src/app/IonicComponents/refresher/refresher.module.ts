@@ -1,4 +1,4 @@
-import { NgModule, OnInit } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
@@ -23,20 +23,4 @@ const routes: Routes = [
   ],
   declarations: [RefresherPage]
 })
-export class RefresherPageModule implements OnInit{
-  constructor() { }
-
-  doRefresh(event) {
-    console.log('Begin async operation');
-
-    setTimeout(() => {
-      console.log('Async operation has ended');
-      event.target.complete();
-    }, 2000);
-  }
-
-  ngOnInit() {
-  }
-
-}
-
+export class RefresherPageModule {}

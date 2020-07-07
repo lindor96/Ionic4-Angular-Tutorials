@@ -9,18 +9,12 @@ import { PopoverController } from '@ionic/angular';
 })
 export class PopoverPage implements OnInit {
 
-  constructor(private popoverController: PopoverController) { }
-
-  async presentPopover(ev: any) {
-    const popover = await this.popoverController.create({
-      component: PopoverPage,
-      event: ev,
-      translucent: true
-    });
-    return await popover.present();
-  }
+  constructor(public popoverController: PopoverController) { }
 
   ngOnInit() {
   }
 
+  dismissPopover(){
+    this.popoverController.dismiss();
+  }
 }

@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { ModalController, AlertController } from '@ionic/angular';
 import { ModalPage } from '../../app/IonicComponents/modal/modal.page'
 
-
 @Component({
   selector: 'app-components',
   templateUrl: './components.page.html',
@@ -77,18 +76,44 @@ export class ComponentsPage implements OnInit {
     const alert = await this.alertController.create({
       header: 'Alert',
       subHeader: 'Menu',
-      message: 'Demonstrated in the home page',
+      message: 'Demonstrated on home page',
       buttons: ['OK']
     });
 
     await alert.present();
   }
 
-  Modal() {
-    this.router.navigate(['modal']);
+  async Modal() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      subHeader: 'Modal',
+      message: 'Demonstrated on home page',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
-  Popover() {
-    this.router.navigate(['popover']);
+
+  async Navigation() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      subHeader: 'Navigation',
+      message: 'Demonstrated thoughout the application',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
+  async Popover() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      subHeader: 'Popover',
+      message: 'Demonstrated on home page',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
   Progress_Indicators() {
@@ -98,8 +123,24 @@ export class ComponentsPage implements OnInit {
   Radio() {
     this.router.navigate(['radio']);
   }
+
+  Refresher() {
+    this.router.navigate(['refresher']);
+  }
+
   Reorder() {
     this.router.navigate(['reorder']);
+  }
+
+  async Routing() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      subHeader: 'Routing',
+      message: 'This component should only be used with vanilla and Stencil JavaScript projects. For Angular projects, use ion-router-outlet and the Angular router.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
   Searchbar() {
